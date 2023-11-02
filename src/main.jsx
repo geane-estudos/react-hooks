@@ -4,11 +4,13 @@ import App from './App.jsx'
 import './index.css'
 import Footer from './Footer.jsx'
 import Contar from './Contar.jsx'
+import Effect from './Effect.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
     <Contar />
+    <Effect />
     <Footer />
   </React.StrictMode>,
 )
