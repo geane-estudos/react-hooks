@@ -6,7 +6,6 @@ const Contar = () => {
 
   function handleCount (){
     setContar((contar) => {
-      console.log(contar);
       return contar +1
       
     })

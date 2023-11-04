@@ -9,12 +9,13 @@ Repositório criado com o objetivo de centralizar estudos de React.
 
 ## Índice
 - [1. Hooks](#1-hooks)
-- [1.2. UseState](#12-usestate)
-- [1.3. UseEffect](#13-useeffect)
+- [1.1. useState](#11-usestate)
+- [1.2. useEffect](#12-useeffect)
+- [1.3. useRef](#12-useeffect)
 
 ### 1. Hooks
 Os Hooks são funções especiais do React que permitem controlarmos o estado e o ciclo de vida de componentes funcionais. Isso antes só era possível com classes.
-#### 1.2. UseState
+#### 1.1. UseState
 Estado: O estado de uma aplicação representa as características dela naquele momento. Por exemplo: os dados do usuário foram carregados, o botão está ativo, o usuário está na página de contato e etc.
 O useState é uma função que retorna uma Array com 2 valores. O primeiro valor guarda o dado do estado atual, pode ser qualquer tipo de dado como strings, arrays, números, boolean, null, undefined e objetos. O segundo valor é uma função que pode ser utilizada para modificarmos o estado do primeiro valor.
 Quando a função de modificação do estado é ativada, todos os componentes que dependerem do estado, serão renderizados novamente e os seus filhos também. É isso que garante a reatividade de componentes funcionais no React.
@@ -29,7 +30,7 @@ O modo estrito invoca duas vezes a renderização do componente, quando o estado
 
 Funções com efeitos coláterais são aquelas que modificam estados que estão fora das mesmas.
 
-#### 1.3. UseEffect
+#### 1.2. UseEffect
 Todo componente possui um ciclo de vida. Os principais momentos acontecem quando o componente é renderizado, atualizado ou destruído. Com o React.useEffect() podemos definir um callback que irá ser executado durante certos momentos do ciclo de vida do componente.
 ##### Array de Dependências
 No useEffect podemos definir dois argumentos, o primeiro é a função de callback que será executada, o segundo é uma array com uma lista de dependências. A lista de dependências serve para informarmos quando o efeito deve ocorrer.
@@ -41,3 +42,10 @@ O useEffect será especialmente utilizado quando precisamos definir um efeito qu
 Podemos ter diversos useEffect no nosso código. O ideal é separarmos efeitos diferentes em useEffect diferentes.
 ##### Antes de Desmontar
 As vezes precisamos executar um efeito sempre que um componente for desmontado. Para isso utilizamos um callback no retorno do callback do efeito.
+
+#### 1.3. UseRef
+Retorna um objeto com a propriedade current. Esse objeto pode ser utilizado para guardarmos valores que irão persistir durante todo o ciclo de vida do elemento. Geralmente usamos o mesmo para nos referirmos a um elemento do DOM, sem precisarmos utilizar o querySelector ou similar.
+##### focus()
+É comum utilizarmos em formulários, quando precisamos de uma referência do elemento para colocarmos o mesmo em foco.
+##### Referência
+O seu uso não é restrito a elementos do dom. Podemos utilizar também para guardarmos a referência de qualquer valor, como de um setTimeout por exemplo.

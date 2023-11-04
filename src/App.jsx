@@ -6,9 +6,7 @@ const App = () => {
 
   function handleClick() {
     setAtivo(!ativo)
-    // console.log(ativo)
     setDados({...dados, cidade: 'Porto Alegre'})
-    // console.log(dados);
   }
   return (
     <div>
