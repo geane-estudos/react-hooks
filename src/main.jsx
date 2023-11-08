@@ -7,6 +7,9 @@ import Contar from './Contar.jsx'
 import Effect from './Effect.jsx'
 import Comentarios from './Comentarios.jsx'
 import Carrinho from './Carrinho.jsx'
+import Memo from './Memo.jsx'
+import Callback from './Callback.jsx'
+import CallbackTeste from './CallbackTeste.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Effect />
     <Comentarios />
     <Carrinho />
+    <Memo />
+    <Callback />
+    <CallbackTeste />
     <Footer />
   </React.StrictMode>,
 )
