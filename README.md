@@ -14,7 +14,8 @@ Repositório criado com o objetivo de centralizar estudos de React.
 - [1.3. useRef](#13-useref)
 - [1.4. useMemo](#14-usememo)
 - [1.5. useCallback](#15-usecallback)
-- [1.6. useContext]()
+- [1.6. useContext](#16-usecontext)
+- [1.7. Custom Hooks]()
 
 ### 1. Hooks
 Os Hooks são funções especiais do React que permitem controlarmos o estado e o ciclo de vida de componentes funcionais. Isso antes só era possível com classes.
@@ -63,3 +64,6 @@ Permite definirmos um callback e uma lista de dependências do callback. Esse ca
 O useContext é o hook que deve ser utilizado para consumirmos o contexto e termos assim acesso aos dados de value. Devemos passar o contexto criado como seu agumento.
 ##### GlobalStorage
 Exemplo de uso real do context. Podemos passar qualquer coisa no value do context, até estados e funções atualizadoras do useState.
+
+#### 1.7. Custom Hooks
+Podemos criar nossos próprios hooks, assim evitamos a repetição de código. Todo custom hook deve começar com a palavra use. Exemplo: useNomeDoHook. Podemos retornar o que quisermos do hook, seja um valor único, uma array ou um objeto.
