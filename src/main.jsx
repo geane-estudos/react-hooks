@@ -10,6 +10,7 @@ import Carrinho from './Carrinho.jsx'
 import Memo from './Memo.jsx'
 import Callback from './Callback.jsx'
 import CallbackTeste from './CallbackTeste.jsx'
+import Form from './Form.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Memo />
     <Callback />
     <CallbackTeste />
+    <Form />
     <Footer />
   </React.StrictMode>,
 )
