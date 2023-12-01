@@ -15,7 +15,7 @@ Repositório criado com o objetivo de centralizar estudos de React.
 - [1.4. useMemo](#14-usememo)
 - [1.5. useCallback](#15-usecallback)
 - [1.6. useContext](#16-usecontext)
-- [1.7. Custom Hooks](#17-customhooks)
+- [1.7. Custom Hooks](#17-custom-hooks)
 
 ### 1. Hooks
 Os Hooks são funções especiais do React que permitem controlarmos o estado e o ciclo de vida de componentes funcionais. Isso antes só era possível com classes.
